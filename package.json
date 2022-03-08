@@ -1,5 +1,5 @@
 {
-  "name": "node-api2-project",
+  "name": "api2-project",
   "version": "0.0.1",
   "main": "index.js",
   "scripts": {
@@ -22,5 +22,12 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/BloomInstituteOfTechnology/node-api2-project.git"
-  }
+  },
+  "description": "Use `Node.js` and `Express` to build an API that performs _CRUD_ operations on `blog posts`.",
+  "bugs": {
+    "url": "https://github.com/BloomInstituteOfTechnology/node-api2-project/issues"
+  },
+  "homepage": "https://github.com/BloomInstituteOfTechnology/node-api2-project#readme",
+  "author": "",
+  "license": "ISC"
 }
