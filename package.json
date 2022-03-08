@@ -1,33 +1,29 @@
 {
-  "name": "api2-project",
+  "name": "node-api2-project",
   "version": "0.0.1",
   "main": "index.js",
   "scripts": {
-    "server": "nodemon index.js",
+    "start": "node ./index.js",
+    "server": "nodemon ./index.js",
     "test": "cross-env NODE_ENV=testing jest --verbose --runInBand --silent",
     "resetdb": "knex migrate:rollback && knex migrate:latest && knex seed:run"
   },
   "dependencies": {
-    "@vscode/sqlite3": "5.0.7",
-    "knex": "^1.0.3"
+    "express": "^4.17.2",
+    "knex": "^0.95.14",
+    "nanoid": "^3.1.31",
+    "sqlite3": "^5.0.2"
   },
   "devDependencies": {
-    "@types/jest": "^27.4.1",
+    "@types/jest": "^27.0.3",
     "cross-env": "^7.0.3",
-    "eslint": "^8.10.0",
-    "jest": "^27.5.1",
+    "eslint": "^8.6.0",
+    "jest": "^27.3.1",
     "nodemon": "^2.0.15",
-    "supertest": "^6.2.2"
+    "supertest": "^6.1.6"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/BloomInstituteOfTechnology/node-api2-project.git"
-  },
-  "description": "Use `Node.js` and `Express` to build an API that performs _CRUD_ operations on `blog posts`.",
-  "bugs": {
-    "url": "https://github.com/BloomInstituteOfTechnology/node-api2-project/issues"
-  },
-  "homepage": "https://github.com/BloomInstituteOfTechnology/node-api2-project#readme",
-  "author": "",
-  "license": "ISC"
+  }
 }
